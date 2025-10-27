@@ -8,14 +8,28 @@
   <style>
     body {font-family: Arial, sans-serif; margin: 0; background: #f9fdfb; color: #222;}
     header {text-align: center; background: #e8f4f8; padding: 20px;}
-    header img {width: 100%; max-width: 1100px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+    .banner {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
     nav {text-align: right; margin: 10px 25px;}
     nav a {margin-left: 10px; text-decoration: none; color: #007b8f; font-weight: bold;}
     main {max-width: 900px; margin: 40px auto; padding: 0 20px;}
     h1, h2 {color: #004b4f;}
     .logos {display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 20px;}
-    .logos img {max-width: 140px; transition: transform 0.2s;}
-    .logos img:hover {transform: scale(1.08);}
+    .logos img {
+      max-width: 120px;
+      height: auto;
+      transition: transform 0.2s;
+      filter: brightness(0.95);
+    }
+    .logos img:hover {
+      transform: scale(1.08);
+      filter: brightness(1);
+    }
     .figure img {width: 100%; max-width: 800px; display: block; margin: 10px auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
     footer {background: #e8f4f8; text-align: center; padding: 10px; margin-top: 40px; font-size: 14px;}
   </style>
@@ -27,7 +41,7 @@
 </nav>
 
 <header>
-  <img src="images/banner_soil2milk.png" alt="Soil2Milk banner">
+  <img src="images/banner_soil2milk.png" alt="Soil2Milk banner" class="banner">
 </header>
 
 <main>
@@ -36,7 +50,7 @@
 
   <p><strong>Host:</strong> NMBU<br>
   <strong>PI:</strong> Mallikarjuna Rao Kovi<br>
-  <strong>Funding:</strong> Research Council of Norway (KSP) & FFL/JA funds<br>
+  <strong>Funding:</strong> Research Council of Norway (KSP) &amp; FFL/JA funds<br>
   <strong>Total budget:</strong> NOK 17.04 million (2026–2030)</p>
 
   <h2>Summary</h2>
@@ -50,8 +64,8 @@
     <li>Update HolosNor model with machine learning and project data for whole-farm simulations.</li>
   </ul>
 
-  <h2>Partners & Funders</h2>
-  <div class="logos">    
+  <h2>Partners &amp; Funders</h2>
+  <div class="logos">
     <img src="images/nmbu.png" alt="NMBU">
     <img src="images/tine.png" alt="TINE SA">
     <img src="images/graminor.png" alt="Graminor AS">
@@ -60,14 +74,14 @@
     <img src="images/nr.png" alt="Norsk Regnesentral">
     <img src="images/embrapa.png" alt="Embrapa">
     <img src="images/yara.png" alt="Yara">
-    <img src="images/nfr.png" alt="NFR – Research Council of Norway">
-    <img src="images/ffl_ja.png" alt="FFL/JA – Forskningsmidlene for jordbruk og matindustri">
+    <img src="images/nfr.png" alt="Research Council of Norway">
+    <img src="images/ffl_ja.png" alt="FFL/JA">
   </div>
   <p style="text-align:center; font-size:14px; margin-top:10px;">Funded by the Research Council of Norway (KSP programme) and the Research Funds for Agriculture and Food Industry (FFL/JA). © 2025 NMBU • Soil2Milk Project.</p>
 
   <h2>Figure 1 – Project Overview</h2>
   <div class="figure">
-    <img src="images/figures/fig1_overview.png" alt="Soil2Milk Project Overview">
+    <img src="images/fig1_overview.png" alt="Soil2Milk Project Overview">
   </div>
   <p style="text-align:center; font-size:14px;">Conceptual flow of the Soil → Feed → Milk system and data integration through machine learning models.</p>
 </main>
