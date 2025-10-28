@@ -1,93 +1,78 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Soil2Milk — Bærekraft gjennom jord–fôr–melk-kjeden (2026–2030)">
   <title>Soil2Milk | NMBU</title>
-  <style>
-    body {font-family: Arial, sans-serif; margin: 0; background: #f9fdfb; color: #222;}
-    header {text-align: center; background: #e8f4f8; padding: 20px;}
-    .banner {
-      width: 100%;
-      max-height: 320px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    nav {text-align: right; margin: 10px 25px;}
-    nav a {margin-left: 10px; text-decoration: none; color: #007b8f; font-weight: bold;}
-    main {max-width: 900px; margin: 40px auto; padding: 0 20px;}
-    h1, h2 {color: #004b4f;}
-    .logos {display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 20px;}
-    .logos img {
-      max-width: 120px;
-      height: auto;
-      transition: transform 0.2s;
-      filter: brightness(0.95);
-    }
-    .logos img:hover {
-      transform: scale(1.08);
-      filter: brightness(1);
-    }
-    .figure img {width: 100%; max-width: 800px; display: block; margin: 10px auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
-    footer {background: #e8f4f8; text-align: center; padding: 10px; margin-top: 40px; font-size: 14px;}
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<nav>
-  <a href="index-no.html">🇳🇴 Norsk</a>
-  <a href="index.html">🇬🇧 English</a>
-</nav>
+  <nav class="navbar">
+    <div class="logo">Soil2Milk</div>
+    <ul>
+      <li><a href="#summary">Sammendrag</a></li>
+      <li><a href="#objectives">Mål</a></li>
+      <li><a href="#partners">Partnere</a></li>
+      <li><a href="#overview">Oversikt</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <span>🇳🇴 Norsk</span> | <a href="index.html">🇬🇧 English</a>
+    </div>
+  </nav>
 
-<header>
-  <img src="images/banner_soil2milk.png" alt="Soil2Milk banner" class="banner">
-</header>
+  <section class="hero">
+    <img src="banner_soil2milk.png" alt="Soil2Milk banner">
+    <div class="hero-text">
+      <h1>Soil2Milk-prosjektet</h1>
+      <p>Forbedrer bærekraft i hele verdikjeden fra jord → fôr → melk (2026–2030)</p>
+    </div>
+  </section>
 
-<main>
-  <h1>Soil2Milk</h1>
-  <h3>Bærekraft gjennom jord → fôr → melk-kjeden (jan 2026 – jan 2030)</h3>
+  <section id="summary" class="fade-in">
+    <h2>Sammendrag</h2>
+    <p><b>Vertsinstitusjon:</b> NMBU<br>
+       <b>Prosjektleder:</b> Mallikarjuna Rao Kovi<br>
+       <b>Finansiering:</b> Norges forskningsråd (KSP) & FFL/JA-midler<br>
+       <b>Totalbudsjett:</b> 17,04 millioner NOK (2026–2030)
+    </p>
 
-  <p><strong>Vert:</strong> NMBU<br>
-  <strong>Prosjektleder (PI):</strong> Mallikarjuna Rao Kovi<br>
-  <strong>Finansiering:</strong> Forskningsrådet (KSP) og FFL/JA-midler<br>
-  <strong>Totalbudsjett:</strong> 17,04 millioner NOK (2026–2030)</p>
+    <p>Soil2Milk forbedrer nitrogenutnyttelse (NUE) og reduserer klimagassutslipp ved å integrere gras–belgvekstsystemer, utvikle CRISPR-mål, gjennomføre melkekuforsøk og oppdatere HolosNor-modellen med maskinlæring og feltdata.</p>
+  </section>
 
-  <h2>Sammendrag</h2>
-  <p>Soil2Milk forbedrer nitrogenutnyttelse (NUE) og reduserer klimagassutslipp ved å kombinere gras–belgvekstblandinger (med <em>Lotus corniculatus</em>), CRISPR‑baserte mål for NUE, kuforsøk for metanproduksjon og -intensitet, samt gårdsmodellering (HolosNor) forbedret med maskinlæring og feltdata.</p>
+  <section id="objectives" class="fade-in">
+    <h2>Prosjektmål</h2>
+    <ul>
+      <li>Kvantifisere N₂O-utslipp og N-fiksering i gras–belgvekstsystemer.</li>
+      <li>Identifisere høy-NUE raigras-genotyper og CRISPR-mål ved bruk av sensor- og UAV-fenotyping.</li>
+      <li>Undersøke metanintensitet og NUE fra forbedret fôrkvalitet.</li>
+      <li>Oppdatere HolosNor-modellen med maskinlæring for gårdssimuleringer.</li>
+    </ul>
+  </section>
 
-  <h2>Mål</h2>
-  <ul>
-    <li>Kvantifisere N₂O‑utslipp og N‑fiksering i gras–belgvekstsystemer under ulike gjødslingsstrategier.</li>
-    <li>Identifisere høy‑NUE raigrasaksessjoner og CRISPR‑mål støttet av sensor‑ og UAV‑fenotyping.</li>
-    <li>Vurdere metanintensitet og NUE‑effekter fra forbedret fôrkvalitet hos melkekyr.</li>
-    <li>Oppdatere HolosNor‑modellen med maskinlæring og prosjektdata for gårdssimuleringer.</li>
-  </ul>
+  <section id="partners" class="fade-in">
+    <h2>Partnere og finansiering</h2>
+    <div class="logo-grid">
+      <img src="nmbu.png" alt="NMBU">
+      <img src="tine.png" alt="TINE">
+      <img src="graminor.png" alt="Graminor">
+      <img src="nlr.png" alt="NLR">
+      <img src="agdir.png" alt="Agdir">
+      <img src="nr.png" alt="Norsk Regnesentral">
+      <img src="embrapa.png" alt="Embrapa">
+      <img src="yara.png" alt="Yara">
+      <img src="nfr.png" alt="NFR">
+      <img src="ffl_ja.png" alt="FFL/JA">
+    </div>
+  </section>
 
-  <h2>Partnere og finansieringskilder</h2>
-  <div class="logos">
-    <img src="images/nmbu.png" alt="NMBU">
-    <img src="images/tine.png" alt="TINE SA">
-    <img src="images/graminor.png" alt="Graminor AS">
-    <img src="images/nlr.png" alt="NLR">
-    <img src="images/agdir.png" alt="Agdir">
-    <img src="images/nr.png" alt="Norsk Regnesentral">
-    <img src="images/embrapa.png" alt="Embrapa">
-    <img src="images/yara.png" alt="Yara">
-    <img src="images/nfr.png" alt="Forskningsrådet (NFR)">
-    <img src="images/ffl_ja.png" alt="FFL/JA – Forskningsmidlene for jordbruk og matindustri">
-  </div>
-  <p style="text-align:center; font-size:14px; margin-top:10px;">Finansiert av Forskningsrådet (KSP‑programmet) og Forskningsmidlene for jordbruk og matindustri (FFL/JA). © 2025 NMBU • Soil2Milk‑prosjektet.</p>
-
-  <h2>Figur 1 – Prosjektoversikt</h2>
-  <div class="figure">
-    <img src="images/fig1_overview.png" alt="Soil2Milk Prosjektoversikt">
-  </div>
-  <p style="text-align:center; font-size:14px;">Konseptuell flyt for jord → fôr → melk‑systemet og dataintegrasjon gjennom maskinlæringsmodeller.</p>
-</main>
-
-<footer>
-  <p>Kontakt: <a href="mailto:mallikarjuna.rao.kovi@nmbu.no">mallikarjuna.rao.kovi@nmbu.no</a> | © 2025 NMBU – Soil2Milk</p>
-</footer>
+  <section id="contact" class="fade-in contact">
+    <p>Kontakt: <a href="mailto:mallikarjuna.rao.kovi@nmbu.no">mallikarjuna.rao.kovi@nmbu.no</a></p>
+    <p>© 2025 NMBU • Soil2Milk-prosjektet</p>
+  </section>
 </body>
 </html>

@@ -3,91 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Soil2Milk — Enhancing Sustainability Across the Soil–Feed–Milk Chain (2026–2030)">
   <title>Soil2Milk | NMBU</title>
-  <style>
-    body {font-family: Arial, sans-serif; margin: 0; background: #f9fdfb; color: #222;}
-    header {text-align: center; background: #e8f4f8; padding: 20px;}
-    .banner {
-      width: 100%;
-      max-height: 320px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    nav {text-align: right; margin: 10px 25px;}
-    nav a {margin-left: 10px; text-decoration: none; color: #007b8f; font-weight: bold;}
-    main {max-width: 900px; margin: 40px auto; padding: 0 20px;}
-    h1, h2 {color: #004b4f;}
-    .logos {display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 20px;}
-    .logos img {
-      max-width: 120px;
-      height: auto;
-      transition: transform 0.2s;
-      filter: brightness(0.95);
-    }
-    .logos img:hover {
-      transform: scale(1.08);
-      filter: brightness(1);
-    }
-    .figure img {width: 100%; max-width: 800px; display: block; margin: 10px auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
-    footer {background: #e8f4f8; text-align: center; padding: 10px; margin-top: 40px; font-size: 14px;}
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- SEO Metadata -->
+  <meta name="description" content="Soil2Milk integrates grass–legume systems, CRISPR targets, dairy trials, and machine learning models to enhance nitrogen use efficiency and reduce emissions.">
+  <meta property="og:image" content="banner_soil2milk.png">
+  <meta name="keywords" content="Soil2Milk, NMBU, Nitrogen Use Efficiency, CRISPR, Dairy, HolosNor, Machine Learning">
 </head>
+
 <body>
-<nav>
-  <a href="index-no.html">🇳🇴 Norsk</a>
-  <a href="index.html">🇬🇧 English</a>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Soil2Milk</div>
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <a href="index-no.html">🇳🇴 Norsk</a> | <span>🇬🇧 English</span>
+    </div>
+  </nav>
 
-<header>
-  <img src="images/banner_soil2milk.png" alt="Soil2Milk banner" class="banner">
-</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="banner_soil2milk.png" alt="Soil2Milk banner">
+    <div class="hero-text">
+      <h1>Soil2Milk Project</h1>
+      <p>Enhancing Sustainability Across the Soil → Feed → Milk Chain (2026–2030)</p>
+    </div>
+  </section>
 
-<main>
-  <h1>Soil2Milk</h1>
-  <h3>Enhancing Sustainability Across the Soil → Feed → Milk Chain (Jan 2026 – Jan 2030)</h3>
+  <!-- Summary -->
+  <section id="summary" class="fade-in">
+    <h2>Summary</h2>
+    <p><b>Host:</b> NMBU<br>
+       <b>PI:</b> Mallikarjuna Rao Kovi<br>
+       <b>Funding:</b> Research Council of Norway (KSP) & FFL/JA funds<br>
+       <b>Total budget:</b> NOK 17.04 million (2026–2030)
+    </p>
 
-  <p><strong>Host:</strong> NMBU<br>
-  <strong>PI:</strong> Mallikarjuna Rao Kovi<br>
-  <strong>Funding:</strong> Research Council of Norway (KSP) &amp; FFL/JA funds<br>
-  <strong>Total budget:</strong> NOK 17.04 million (2026–2030)</p>
+    <p>
+      Soil2Milk improves nitrogen use efficiency (NUE) and reduces greenhouse gas emissions by integrating mixed grass–legume systems (<i>Lotus corniculatus</i>), CRISPR-enabled targets for NUE, dairy cow trials on methane yield and intensity, and whole-farm modeling (HolosNor) enhanced with machine learning and field data.
+    </p>
+  </section>
 
-  <h2>Summary</h2>
-  <p>Soil2Milk improves nitrogen use efficiency (NUE) and reduces greenhouse gas emissions by integrating mixed grass–legume systems (with <em>Lotus corniculatus</em>), CRISPR-enabled targets for NUE, dairy cow trials on methane yield and intensity, and whole-farm modeling (HolosNor) enhanced with machine learning and field data.</p>
+  <!-- Objectives -->
+  <section id="objectives" class="fade-in">
+    <h2>Objectives</h2>
+    <ul>
+      <li>Quantify N₂O emissions and N-fixation in mixed grass–legume systems under different fertilizer strategies.</li>
+      <li>Identify high-NUE ryegrass accessions and CRISPR targets supported by sensor and UAV phenomics.</li>
+      <li>Assess dairy methane intensity and NUE effects from improved forage quality.</li>
+      <li>Update HolosNor model with machine learning and project data for whole-farm simulations.</li>
+    </ul>
+  </section>
 
-  <h2>Objectives</h2>
-  <ul>
-    <li>Quantify N₂O emissions and N-fixation in mixed grass–legume systems under different fertilizer strategies.</li>
-    <li>Identify high-NUE ryegrass accessions and CRISPR targets supported by sensor and UAV phenomics.</li>
-    <li>Assess dairy methane intensity and NUE effects from improved forage quality.</li>
-    <li>Update HolosNor model with machine learning and project data for whole-farm simulations.</li>
-  </ul>
+  <!-- Partners -->
+  <section id="partners" class="fade-in">
+    <h2>Partners & Funders</h2>
+    <div class="logo-grid">
+      <img src="nmbu.png" alt="NMBU">
+      <img src="tine.png" alt="TINE">
+      <img src="graminor.png" alt="Graminor">
+      <img src="nlr.png" alt="NLR">
+      <img src="agdir.png" alt="Agdir">
+      <img src="nr.png" alt="Norsk Regnesentral">
+      <img src="embrapa.png" alt="Embrapa">
+      <img src="yara.png" alt="Yara">
+      <img src="nfr.png" alt="NFR">
+      <img src="ffl_ja.png" alt="FFL/JA">
+    </div>
+    <p class="fundnote">
+      Funded by the Research Council of Norway (KSP programme) and the Research Funds for Agriculture and Food Industry (FFL/JA).
+    </p>
+  </section>
 
-  <h2>Partners &amp; Funders</h2>
-  <div class="logos">
-    <img src="images/nmbu.png" alt="NMBU">
-    <img src="images/tine.png" alt="TINE SA">
-    <img src="images/graminor.png" alt="Graminor AS">
-    <img src="images/nlr.png" alt="NLR">
-    <img src="images/agdir.png" alt="Agdir">
-    <img src="images/nr.png" alt="Norsk Regnesentral">
-    <img src="images/embrapa.png" alt="Embrapa">
-    <img src="images/yara.png" alt="Yara">
-    <img src="images/nfr.png" alt="Research Council of Norway">
-    <img src="images/ffl_ja.png" alt="FFL/JA">
+  <!-- Figure -->
+  <section id="overview" class="fade-in">
+    <h2>Figure 1 – Project Overview</h2>
+    <img src="fig1_overview.png" alt="Soil2Milk Project Overview" class="clickable">
+    <p class="caption">
+      Conceptual flow of the Soil → Feed → Milk system and data integration through machine learning models.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in contact">
+    <p>Contact: <a href="mailto:mallikarjuna.rao.kovi@nmbu.no">mallikarjuna.rao.kovi@nmbu.no</a></p>
+    <p>© 2025 NMBU • Soil2Milk Project</p>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="image-popup" class="popup">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded view">
   </div>
-  <p style="text-align:center; font-size:14px; margin-top:10px;">Funded by the Research Council of Norway (KSP programme) and the Research Funds for Agriculture and Food Industry (FFL/JA). © 2025 NMBU • Soil2Milk Project.</p>
-
-  <h2>Figure 1 – Project Overview</h2>
-  <div class="figure">
-    <img src="images/fig1_overview.png" alt="Soil2Milk Project Overview">
-  </div>
-  <p style="text-align:center; font-size:14px;">Conceptual flow of the Soil → Feed → Milk system and data integration through machine learning models.</p>
-</main>
-
-<footer>
-  <p>Contact: <a href="mailto:mallikarjuna.rao.kovi@nmbu.no">mallikarjuna.rao.kovi@nmbu.no</a> | © 2025 NMBU – Soil2Milk</p>
-</footer>
 </body>
 </html>
