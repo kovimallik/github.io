@@ -38,12 +38,18 @@ body {
   /* Hero banner */
   .hero {
   position: relative;
+  height: 350px;          /* Set the height you want the banner to be */
+  overflow: hidden;
+}
+
+/* HERO image */
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 350px;               /* Set a fixed height to prevent stretching */
-  background-image: url("images/banner_soil2milk.png");
-  background-size: cover;      /* Preserve aspect ratio and fill */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
+  height: 100%;           /* Image fills the container height */
+  object-fit: cover;      /* Maintain aspect ratio, cropping if necessary */
 }
   .hero-overlay {
     position: absolute;
