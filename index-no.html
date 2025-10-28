@@ -6,11 +6,11 @@
   <title>Soil2Milk | NMBU</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Soil2Milk</div>
     <ul>
@@ -25,35 +25,40 @@
     </div>
   </nav>
 
+  <!-- Hero banner with overlay -->
   <section class="hero">
     <img src="images/banner_soil2milk.png" alt="Soil2Milk banner">
-    <div class="hero-text">
-      <h1>Soil2Milk-prosjektet</h1>
+    <div class="hero-overlay">
+      <h1>Soil2Milk‑prosjektet</h1>
       <p>Forbedrer bærekraft i hele verdikjeden fra jord → fôr → melk (2026–2030)</p>
     </div>
   </section>
 
+  <!-- Sammendrag -->
   <section id="summary" class="fade-in">
     <h2>Sammendrag</h2>
-    <p><b>Vertsinstitusjon:</b> NMBU<br>
-       <b>Prosjektleder:</b> Mallikarjuna Rao Kovi<br>
-       <b>Finansiering:</b> Norges forskningsråd (KSP) & FFL/JA-midler<br>
-       <b>Totalbudsjett:</b> 17,04 millioner NOK (2026–2030)
+    <p><strong>Vertsinstitusjon:</strong> NMBU<br>
+       <strong>Prosjektleder:</strong> Mallikarjuna Rao Kovi<br>
+       <strong>Finansiering:</strong> Norges forskningsråd (KSP) & FFL/JA‑midler<br>
+       <strong>Totalbudsjett:</strong> 17,04 millioner NOK (2026–2030)
     </p>
-
-    <p>Soil2Milk forbedrer nitrogenutnyttelse (NUE) og reduserer klimagassutslipp ved å integrere gras–belgvekstsystemer, utvikle CRISPR-mål, gjennomføre melkekuforsøk og oppdatere HolosNor-modellen med maskinlæring og feltdata.</p>
+    <p>
+      Soil2Milk forbedrer nitrogenutnyttelse (NUE) og reduserer klimagassutslipp ved å integrere gras–belgvekstsystemer (<i>Lotus corniculatus</i>), utvikle CRISPR‑mål for bedre NUE, utføre melkekuforsøk for metanintensitet og varierende avkastning, og oppdatere helhetlige gårdsmodeller (HolosNor) med maskinlæring og feltdata.
+    </p>
   </section>
 
+  <!-- Prosjektmål -->
   <section id="objectives" class="fade-in">
     <h2>Prosjektmål</h2>
     <ul>
-      <li>Kvantifisere N₂O-utslipp og N-fiksering i gras–belgvekstsystemer.</li>
-      <li>Identifisere høy-NUE raigras-genotyper og CRISPR-mål ved bruk av sensor- og UAV-fenotyping.</li>
-      <li>Undersøke metanintensitet og NUE fra forbedret fôrkvalitet.</li>
-      <li>Oppdatere HolosNor-modellen med maskinlæring for gårdssimuleringer.</li>
+      <li>Kvantifisere N₂O‑utslipp og N‑fiksering i gras–belgvekstsystemer med ulike gjødslingsstrategier.</li>
+      <li>Identifisere raigrasaksesser med høy NUE og CRISPR‑mål med støtte fra sensor- og UAV‑fenomikk.</li>
+      <li>Undersøke metanintensitet og NUE‑effekter som følge av forbedret fôrkvalitet hos melkekyr.</li>
+      <li>Oppdatere HolosNor‑modellen med maskinlæring og prosjektdata for helhetlige gårdssimuleringer.</li>
     </ul>
   </section>
 
+  <!-- Partnere -->
   <section id="partners" class="fade-in">
     <h2>Partnere og finansiering</h2>
     <div class="logo-grid">
@@ -68,11 +73,26 @@
       <img src="images/nfr.png" alt="NFR">
       <img src="images/ffl_ja.png" alt="FFL/JA">
     </div>
+    <p class="fundnote">Finansiert av Norges forskningsråd (KSP‑programmet) og Forskningsmidlene for jordbruk og matindustri (FFL/JA).</p>
   </section>
 
+  <!-- Figur 1 – Prosjektoversikt -->
+  <section id="overview" class="fade-in">
+    <h2>Figur 1 – Prosjektoversikt</h2>
+    <img src="images/fig1_overview.png" alt="Soil2Milk‑prosjektoversikt" class="clickable">
+    <p class="caption">Skjematisk oversikt over Soil → Fôr → Melk‑systemet og dataintegrasjon ved hjelp av maskinlæringsmodeller.</p>
+  </section>
+
+  <!-- Kontakt -->
   <section id="contact" class="fade-in contact">
     <p>Kontakt: <a href="mailto:mallikarjuna.rao.kovi@nmbu.no">mallikarjuna.rao.kovi@nmbu.no</a></p>
-    <p>© 2025 NMBU • Soil2Milk-prosjektet</p>
+    <p>© 2025 NMBU • Soil2Milk‑prosjektet</p>
   </section>
+
+  <!-- Popup Modal for enlarged figure -->
+  <div id="image-popup" class="popup">
+    <span class="close">&times;</span>
+    <img src="" alt="Utvidet bilde">
+  </div>
 </body>
 </html>
